@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Tienda de productos de iluminación y decoración para el hogar y oficina" >
+  <meta name="keywords" content="lámpara, portaretrato, portallaves, decoración, iluminación">
+
+  <title>The Lamp Stock - Home</title>
+
+  <!-- Ícono de la página -->
+
+  <link rel="icon" href="img/bulb-icon.png" />
+
+  <!-- Linkeo el cdn de bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- Linkeo la hoja de estilos -->
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Importo las fuentes de google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--comienzo del header-->
+
+  <header>
+    <!--<nav><h1>The Lamp Stock</h1></nav>-->
+    <div class="logo-lamp-stock">
+      <a href="index.html"><img src="img/logo-lamp-stock.png" alt="Logo The Lamp Stock" /></a>
+    </div>
+    <div id="navBar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="faq.html">F.A.Q.</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--comienzo de los articles-->
+
+  <main>
+    <div class="titulo">
+      <h1>Bienvenido a The Lamp Stock</h1>
+    </div>
+
+    <div class="descripcion">
+      <h2>Fabricamos productos para el hogar</h2>
+
+      <p>
+        Somos una empresa que fabrica y comercializa productos para la
+        decoración del hogar. Fabricamos desde lámparas hasta portallaves,
+        pasando por otros items como portalápices, apoya celulares y más!
+        <br />
+        Para conocer más artículos que fabricamos, vaya a la sección
+        <a href="productos.html">productos.</a>
+      </p>
+    </div>
+
+    <!-- Código de carrusel -->
+
+    <div id="cent">
+      <div id="carouselExampleIndicators" class="carousel slide carrusel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/port1.JPG" class="d-block w-100" alt="Imagen Portada 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/port2.JPG" class="d-block w-100" alt="Imagen Portada 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/port3.JPG" class="d-block w-100" alt="Imagen Portada 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="pie-texto">
+      <p>Mapa del sitio</p>
+      <p><em>Copyright 2021</em></p>
+    </div>
+    <div class="redes">
+      <img src="img/facebook.png" alt="Icono Facebook">
+      <img src="img/instagram.png" alt="Icono Instagram">
+    </div>
+  </footer>
+
+
+  <!-- link script de JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
