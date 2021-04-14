@@ -21,14 +21,15 @@
 
 <body>
   <!--comienzo del header-->
+
   <header>
     <!--<nav><h1>The Lamp Stock</h1></nav>-->
     <div class="logo-lamp-stock">
       <a href="index.html"><img src="img/logo-lamp-stock.png" alt="Logo The Lamp Stock" /></a>
     </div>
-
-    <div id="navBar">
-      <nav>
+    
+    <div>
+      <nav class="nav-bar">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="productos.html">Productos</a></li>
@@ -38,47 +39,34 @@
         </ul>
       </nav>
     </div>
+
   </header>
+
   <main>
     <div class="titulo">
       <h1>Contactanos</h1>
     </div>
+
 <div id="contacto">
-    <section id="formulario">
+
       <form action="">
-        <div id="form-items">
+        <div class="form-contacto">
           <label for="nombre">Nombre:</label>
-          <input name="nombre" type="text" />
+          <input name="nombre" placeholder="Tu nombre..." type="text" />
           <label for="apellido">Apellido:</label>
-          <input name="apellido" type="text" />
+          <input name="apellido" placeholder="Tu apellido..." type="text" />
           <label for="email">Email:</label>
-          <input name="email" type="email" />
+          <input name="email" placeholder="Tu email..." type="email" />
           <label for="telefono">Teléfono:</label>
-          <input name="telefono" type="text" />
-        </div>
+          <input name="telefono" placeholder="Tu teléfono..." type="text" />
+        
 
-        <label for="">¿Desea que nos comuniquemos
-        telefónicamente?</label><br />
-        <label>Sí</label>
-        <input type="radio" name="llamada" id="" value="si" />
-        <label>No</label>
-        <input type="radio" name="llamada" id="" value="no" /><br />
-        <label for="pais">País:</label>
-        <select name="pais">
-          <option value="argentina">Argentina</option>
-          <option value="brasil">Brasil</option>
-          <option value="chile">Chile</option>
-          <option value="peru">Perú</option>
-          <option value="-">Otro</option>
-        </select><br />
-
-        <label for="mensaje">Mensaje:</label><br />
-        <textarea name="mensaje" placeholder="Escribe tu mensaje aqui..." id="" cols="30" rows="10"></textarea><br />
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Borrar" />
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aqui..." id="" cols="30" rows="5"></textarea>
+        <input class="form-btn-enviar" type="submit" value="Enviar" />
+      </div>
       </form>
-    </section>
-    <div>
+    <div class="contacto-mapa">
         <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.127153514577!2d-58.432574284236935!3d-34.60094606485947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca701876c767%3A0x6724e0c177138ea3!2sHumahuaca%204640%2C%20C1192ACP%20CABA!5e0!3m2!1ses!2sar!4v1617040961708!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
   </div>
@@ -86,15 +74,43 @@
   </main>
   
   <footer>
-    <div class="pie-texto">
-      <p>Mapa del sitio</p>
-      <p><em>Copyright 2021</em></p>
+
+    <div class="secciones">
+
+      <a href="index.html">Home</a>
+      <a href="productos.html">Productos</a>
+      <a href="faq.html">F.A.Q.</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
     </div>
+
+    <div class="pie-texto">
+      <h3>Contactanos</h3>
+      <p>+5491136146119</p>
+      <p>lampstock@gmail.com</p>
+      <p>Almagro, Ciudad de Buenos Aires</p>
+    </div>
+
     <div class="redes">
-      <img src="img/facebook.png" alt="Icono Facebook">
-      <img src="img/instagram.png" alt="Icono Instagram">
+
+      <h3>Seguinos en nuestras redes</h3>
+      <div class="cont-redes">
+        <a href="#">
+          <div class="cont-icon">
+            <img src="img/facebook.png" alt="Icono Facebook">
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="cont-icon">
+            <img src="img/instagram.png" alt="Icono Instagram">
+          </div>
+        </a>
+      </div>
     </div>
   </footer>
+
+
 </body>
 
 </html>

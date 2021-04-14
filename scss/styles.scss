@@ -21,19 +21,19 @@ $color-light:rgb(207, 219, 223);
   h1 {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:$font-primary-color;
     text-align:center;
   }
   h2 {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     color:$font-secondary-color;
     text-align: center;
     padding:0 10px 0 10px;
   }
-  h3,p,pre,table,ol,ul,label {
+  h3,p,pre,ol,ul,label,input,textarea {
     font-family: "Ubuntu", sans-serif;
     font-weight: lighter;
     line-height: 2rem;
@@ -55,10 +55,6 @@ $color-light:rgb(207, 219, 223);
       font-weight: bold;
       
       }
-      a:hover {
-        color: rgb(36, 73, 94);
-        text-shadow: 2px 2px 5px rgb(155, 155, 152);
-      }
     
    
   }
@@ -66,14 +62,15 @@ $color-light:rgb(207, 219, 223);
 
  
   
-  nav {
-    border: 2px solid rgba(110, 43, 43, 0.541);
+  .nav-bar {
+    border: 1px solid rgb(241, 150, 150);
     text-align:center;
     ul {
       display:inline;
       padding:0;
     }
     li {
+      border-bottom:1px solid rgb(241, 150, 150);
       display: block;
       margin:0 5%;
       position:relative;
@@ -102,44 +99,48 @@ $color-light:rgb(207, 219, 223);
    
   }
   
-  table {
-    margin:50px 0px;
-    color: rgb(70, 77, 85);
-   
-  }
-  table, th,td{
-    border: 2px solid gray;
-    border-collapse: collapse;
-  }
-  
+
   ul {
     list-style-type: square;
   }
   ol {
     list-style-type: lower-roman;
   }
-  
-  footer {
-    display:grid;
-    //justify-items: center;
+
+footer{
+  background-color: #f9d29d;
+  background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
+
+  padding:2vh 5px 2vh 0;
+  border: 1px dotted gray;
+  p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+}
+  .secciones{
+    grid-area: secciones;
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    grid-template-areas: 
-    ". pie-texto redes";
-    grid-template-columns: 1fr 1fr 1fr;
-
-
-    background-color: #f9d29d;
-    background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
-  
-    padding: 5px;
-    border: 1px dotted gray;
-    p {
-      text-align: center;
-      font-size: 1rem;
+    a { 
+      color: $font-secondary-color;
+      font-family: "Ubuntu", sans-serif;
+      text-decoration: none;
+      color:rgb(58, 58, 58);
+      font-size: 1.1rem;
       font-weight: bold;
       line-height: normal;
-    }
+      margin:10px 0;
+    
+      
+      }
+
   }
+  
   
 
 
@@ -149,36 +150,82 @@ $color-light:rgb(207, 219, 223);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    p{
-      margin:0;
+    h3{
+      margin:10px 0;
+      font-size: 1.5rem;
+      font-weight:bold;
+      
     }
+    p{
+      color:rgb(58, 58, 58);
+      margin:10px 0;
+    }
+
   }
 
+.cont-redes{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cont-icon{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:5px;
+  background-color:#C2554F;
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+}
 .redes{
   grid-area:redes;
   display:flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   img{
     padding:0 0.5vw;
-    height: 3vh;
+    height: 20px;
+  }
+  h3{
+    margin:10px 0;
+    font-size: 1.5rem;
+    font-weight:bold;
   }
 
 }
-  #formulario{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 
-  }
-  #form-items{
-    input{
+
+  .form-contacto{
+      width: 80vw;
+      border-radius: 10px;
+      background-color:#f1dcbe;
+      color:black;
+      font-weight: 600;
+      padding:10px 20px;
+      margin:5vh 0;
       display:flex;
       flex-direction: column;
-      align-items: flex-end;
-        }
+      align-items: center;
+      input,textarea{
+        border:1px solid rgb(121, 121, 121);
+        font-size: 1rem;;
+      }
+      .form-btn-enviar{
+        background-color: #4CAF50;
+        color:whitesmoke;
+        border-radius:10px;
+        border:none;
+        font-size: 1rem;
+        padding:2px 10px;
+        margin:5px;
+    } 
+       
 
   }
+
   #about-us{
     margin:0;
     padding-bottom: 5vh;
@@ -211,7 +258,8 @@ $color-light:rgb(207, 219, 223);
   
   .titulo{
     
-    background-color: rgb(216, 207, 187);
+    background-color: #FFF7E8;
+    h1{color:rgba(0, 0, 0, 0.767);}
     margin:2px 0px 20px 0px;
     padding:20px 0;
   }
@@ -227,6 +275,9 @@ $color-light:rgb(207, 219, 223);
   }
   .borde{
     border:1px solid rgb(231, 230, 230);
+    img{
+      border-radius: 5%;
+    }
     
   }
   
@@ -307,25 +358,20 @@ $color-light:rgb(207, 219, 223);
     align-items: center;
     padding:10px 0 20px 0;
   }
-  #formulario{
-    padding: 10px 0 20px 0;
-  }
+
   #gmap{
+    
     width:90vw;
     height:50vh;
-    padding-bottom: 20px;;
+    
+  }
+  .contacto-mapa{
+    border:1px solid rgb(139, 139, 139);
+    padding:0;
+    margin:0;
   }
 
-  #tabla{
-    margin:0 20px 30px 20px;
-    padding-top:20px;
-    li{
-      list-style-type: none;
-    }
-    td{
-      padding:0 10px 0 10px;
-    }
-  }
+
   #recomendaciones{
     margin-bottom:5vh;
     padding-bottom: 5vh;
@@ -341,7 +387,33 @@ $color-light:rgb(207, 219, 223);
   }
   
   
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 750px) {
+
+    h1 {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      color:$font-primary-color;
+      text-align:center;
+    }
+    h2 {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: bold;
+      font-size: 1.7rem;
+      color:$font-secondary-color;
+      text-align: center;
+      padding:0 10px 0 10px;
+    }
+    h3,p,pre,ol,ul,label {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: lighter;
+      line-height: 2rem;
+      color: $font-secondary-color;
+    }
+
+
+
+
     .logo-lamp-stock img {
       padding: 20px;
       width: 400px;
@@ -354,12 +426,24 @@ $color-light:rgb(207, 219, 223);
         height:100%;
       }
     }
-  
-    nav li {
+
+
+    .nav-bar{
+
+    li {
       display: inline-block;
+      border:none;
+      padding:10px 0 10px 0;
       margin:0 5%;
+      font-size: 1.2rem;
       position:relative;
     }
+    a:hover{
+      text-shadow: 1px 1px 5px #c5bebe;
+      color:rgb(53, 58, 58);
+      
+    }
+  }
    
     #cent{
       padding: 40px 0 100px 0;
@@ -386,6 +470,33 @@ $color-light:rgb(207, 219, 223);
         font-size: 1rem;
       }
     }
+    .form-contacto{
+      width: 100%;
+      border-radius: 10px;
+        background-color:#f1dcbe;
+        color:black;
+        font-weight: 600;
+        padding:10px 20px;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        input,textarea{
+          border:1px solid rgb(121, 121, 121);
+          font-size: 1rem;;
+        }
+        .form-btn-enviar{
+          background-color: #4CAF50;
+          color:whitesmoke;
+          border-radius:10px;
+          border:none;
+          font-size: 1rem;
+          padding:2px 10px;
+          margin:5px;
+      } 
+         
+  
+    }
+    
   #contacto{
     display:flex;
     flex-direction: row;
@@ -397,19 +508,11 @@ $color-light:rgb(207, 219, 223);
     width:60vw;
     height:60vh;
   }
-  #tabla{
-    margin:0 20px 30px 20px;
-    padding-top:20px;
-    li{
-      list-style-type: none;
-    }
-    td{
-      padding:0 10px 0 10px;
-    }
-  }
+
   #recomendaciones{
-  margin:0;
-  padding:10px 0 30px 20px;
+
+    font-size: 1.2rem;
+    padding:10px 100px 30px 20px;
 
   }
     .container{
@@ -480,7 +583,26 @@ $color-light:rgb(207, 219, 223);
       }
       
     }
+    footer {
+      display:grid;
+      align-items: center;
+      grid-template-areas: 
+      "secciones pie-texto redes";
+      grid-template-columns: 1fr 1fr 1fr;
   
+  
+      background-color: #f9d29d;
+      background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
+    
+      padding:2vh 5px 2vh 0;
+      border: 1px dotted gray;
+      p {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: normal;
+      }
+    }
   
     .pie{
       grid-area:pie;
