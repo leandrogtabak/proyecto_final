@@ -130,6 +130,17 @@ footer {
   width: 50px;
   border-radius: 50%; }
 
+.cont-icon:hover {
+  animation-name: icon-color;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes icon-color {
+  from {
+    background-color: #C2554F; }
+  to {
+    background-color: #861c17; } }
+
 .redes {
   grid-area: redes;
   display: flex;
