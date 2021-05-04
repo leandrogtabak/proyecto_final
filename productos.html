@@ -14,6 +14,12 @@
   <!-- Ícono de la página -->
 
   <link rel="icon" href="img/bulb-icon.png" />
+
+    <!-- Linkeo el cdn de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
@@ -27,16 +33,24 @@
     <div class="logo-lamp-stock">
       <a href="index.html"><img src="img/logo-lamp-stock.png" alt="Logo The Lamp Stock" /></a>
     </div>
-    
+
     <div>
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="faq.html">F.A.Q.</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light nav-bar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link px-5" href="index.html">Home</a>
+              <a class="nav-link active px-5" aria-current="page" href="productos.html">Productos</a>
+              <a class="nav-link px-5" href="faq.html">F.A.Q.</a>
+              <a class="nav-link px-5" href="nosotros.html">Nosotros</a>
+              <a class="nav-link px-5" href="contacto.html">Contacto</a>
+              
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
 
@@ -48,7 +62,7 @@
       <h1>Nuestros productos</h1>
     </div>
 
-    <div class="container descripcion">
+    <div class="contenedor">
 
       <div class="modelo">
         <h2>Lámpara POT de escritorio</h2>
@@ -67,7 +81,7 @@
 
 
 
-    <div class="container descripcion">
+    <div class="contenedor">
 
       <div class="modelo">
         <h2>Lámpara Trípode</h2>
@@ -85,7 +99,7 @@
       </div>
     </div>
 
-    <div class="container descripcion">
+    <div class="contenedor">
 
       <div class="modelo">
         <h2>Palabras decorativas</h2>
@@ -165,6 +179,9 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+  crossorigin="anonymous"></script>
 
 </body>
 
